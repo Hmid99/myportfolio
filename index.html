@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dynamic Portfolio</title>
+    <title>Portfolio - Your Name</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 id="name">Loading...</h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -18,25 +17,55 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p id="about-text">Loading...</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul id="project-list"></ul>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul id="skills-list"></ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p id="contact-info">Loading...</p>
-        </section>
-    </main>
-    <script src="script.js"></script>
+
+    <section id="hero">
+        <h1>Hi, I'm Your Name</h1>
+        <p>A Software Engineer specialized in QA, DevOps, and IoT Systems</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software engineer with expertise in test automation, cloud infrastructure, and IoT solutions.
+            My goal is to build robust and scalable systems that make a difference.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>ParamJSON Creator Test Automation</h3>
+            <p>Automated testing and validation of ParamJSON Creator using Robot Framework and Selenium.</p>
+        </div>
+        <div class="project">
+            <h3>Cloud Infrastructure Automation</h3>
+            <p>CI/CD pipelines with Terraform, Jenkins, Docker, and Kubernetes on GCP.</p>
+        </div>
+        <div class="project">
+            <h3>IoT Mobile App</h3>
+            <p>Developed a Flutter app for car data storage, integrating Firebase and STM32 microcontrollers.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Test Automation: Selenium, Robot Framework</li>
+            <li>DevOps Tools: Jenkins, Terraform, Kubernetes</li>
+            <li>Programming: Python, Java, Dart</li>
+            <li>Cloud Platforms: Google Cloud Platform (GCP)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work together, feel free to reach out!</p>
+        <a href="mailto:your.email@example.com" class="cta-button">Email Me</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
