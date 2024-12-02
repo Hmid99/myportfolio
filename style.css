@@ -1,3 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00c6ff; /* Highlight color on hover */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for the hero section */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    color: #0072ff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#hero .cta-button:hover {
+    background: #0072ff;
+    color: #fff;
+    transform: translateY(-3px); /* Subtle hover effect */
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Light shadow for sections */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#projects .project {
+    margin-bottom: 2rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project h3 {
+    font-size: 1.8rem;
+    color: #0072ff;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -14,4 +136,64 @@
     .cta-button {
         font-size: 1.2rem;
     }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .skills-list li {
+        font-size: 1.1rem;
+    }
+
+    #projects .project {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 0.8rem 0;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    #hero {
+        padding: 2rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .skills-list li {
+        font-size: 1rem;
+    }
+
+    #projects .project {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Additional Styles */
+button, .cta-button {
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.9rem;
 }
