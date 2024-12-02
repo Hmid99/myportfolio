@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Dynamic data
     const profile = {
-        name: "Your Name",
+        name: "Hmid Mohamed",
         about: "I am a passionate software engineer with expertise in QA testing and DevOps.",
         projects: [
             { name: "Project 1", description: "Automated testing for JSON validation." },
