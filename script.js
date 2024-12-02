@@ -1,1 +1,35 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Dynamic data
+    const profile = {
+        name: "Your Name",
+        about: "I am a passionate software engineer with expertise in QA testing and DevOps.",
+        projects: [
+            { name: "Project 1", description: "Automated testing for JSON validation." },
+            { name: "Project 2", description: "Developed a cloud infrastructure with Terraform." },
+            { name: "Project 3", description: "Built a mobile app for vehicle data storage." }
+        ],
+        skills: ["Python", "JavaScript", "Jenkins", "Terraform", "Selenium"],
+        contact: "Feel free to reach out via email: your-email@example.com"
+    };
+
+    // Populate data
+    document.getElementById("name").textContent = profile.name;
+    document.getElementById("about-text").textContent = profile.about;
+
+    const projectList = document.getElementById("project-list");
+    profile.projects.forEach(project => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${project.name}: ${project.description}`;
+        projectList.appendChild(listItem);
+    });
+
+    const skillsList = document.getElementById("skills-list");
+    profile.skills.forEach(skill => {
+        const listItem = document.createElement("li");
+        listItem.textContent = skill;
+        skillsList.appendChild(listItem);
+    });
+
+    document.getElementById("contact-info").textContent = profile.contact;
+});
 
