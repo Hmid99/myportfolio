@@ -1,1 +1,91 @@
 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #0072ff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#hero .cta-button:hover {
+    background: #0072ff;
+    color: #fff;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#projects .project {
+    margin-bottom: 2rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
