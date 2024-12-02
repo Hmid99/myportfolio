@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
         about: "I am a passionate software engineer with expertise in QA testing and DevOps.",
         projects: [
             { name: "Project 1", description: "Automated testing for JSON validation using Robot Framework." },
-            { name: "Project 2", description: "Developed a cloud infrastructure with Terraform and GCP." },
+        
             { name: "Project 3", description: "Built a mobile app for vehicle data storage with Flutter." }
         ],
-        skills: ["Python", "JavaScript", "Jenkins", "Terraform", "Selenium"],
-        contact: "Feel free to reach out via email: hmid.mohamed@example.com"
+        skills: ["Python", , "Jenkins", "Robot Framework", "Selenium"],
+        contact: "Feel free to reach out via email: mohamedhmid004@gmail.com"
     };
 
     // Populate data
