@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
         name: "Hmid Mohamed",
         about: "I am a passionate software engineer with expertise in QA testing and DevOps.",
         projects: [
-            { name: "Project 1", description: "Automated testing for JSON validation." },
-            { name: "Project 2", description: "Developed a cloud infrastructure with Terraform." },
-            { name: "Project 3", description: "Built a mobile app for vehicle data storage." }
+            { name: "Project 1", description: "Automated testing for JSON validation using Robot Framework." },
+            { name: "Project 2", description: "Developed a cloud infrastructure with Terraform and GCP." },
+            { name: "Project 3", description: "Built a mobile app for vehicle data storage with Flutter." }
         ],
         skills: ["Python", "JavaScript", "Jenkins", "Terraform", "Selenium"],
-        contact: "Feel free to reach out via email: your-email@example.com"
+        contact: "Feel free to reach out via email: hmid.mohamed@example.com"
     };
 
     // Populate data
@@ -32,4 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("contact-info").textContent = profile.contact;
 });
-
